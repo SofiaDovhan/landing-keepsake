@@ -1,6 +1,8 @@
 # Keepsake — адаптивний лендінг дизайн-агенції
 Макет: Figma «Keepsake - Responsive» (Desktop 1280, Tablet 768, Mobile 375, Mobile - menu open, UI states).
 
+**Демо:** https://sofiadovhan.github.io/landing-keepsake/
+
 ## Технології
 - Семантичний HTML5 (`header`, `nav`, `main`, `section`, `article`, `footer`, `form`), один `h1`, правильна ієрархія `h2`–`h3`.
 - Чистий CSS без фреймворків: Flexbox для розкладки, CSS Grid для сітки робіт, послуг, статистики та клієнтів.
