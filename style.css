@@ -61,7 +61,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: var(--header-height);
 }
 
@@ -894,8 +893,9 @@ ul {
 
 .quote-mark {
   height: 44px;
+  width: 29px;
   font-family: var(--font-open-sans);
-  font-weight: 700;
+  font-weight: 400;
   font-size: 64px;
   line-height: 44px;
   color: var(--color-accent);
