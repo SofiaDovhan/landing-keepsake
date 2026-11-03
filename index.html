@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Keepsake - digital and branding agency specializing in web design, motion video, print and identity.">
+  <title>Keepsake | Digital Branding Agency</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700family=Open+Sans:wght@300;400;700family=Oswald:wght@300;400;700display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<svg class="svg-sprite" aria-hidden="true">
+  <symbol id="icon-heart" viewBox="0 0 16 14.4">
+    <path fill="currentColor" d="M8 14.4C-3 6.5 1.5-1 5.5.6 6.8 1.1 7.6 2 8 3 8.4 2 9.2 1.1 10.5.6 14.5-1 19 6.5 8 14.4Z"/>
+  </symbol>
+  <symbol id="icon-plus" viewBox="0 0 16 16">
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M8 1v14M1 8h14"/>
+  </symbol>
+  <symbol id="icon-mail" viewBox="0 0 14 10">
+    <rect x=".5" y=".5" width="13" height="9" fill="none" stroke="currentColor"/>
+    <path fill="none" stroke="currentColor" d="M.5 1l6.5 5 6.5-5"/>
+  </symbol>
+  <symbol id="icon-chevron" viewBox="0 0 5 9">
+    <path fill="none" stroke="currentColor" stroke-width="1.2" d="M.5.5l4 4-4 4"/>
+  </symbol>
+</svg>
+
+<header class="header">
+  <div class="container header-container">
+    <a href="#top" class="logo" aria-label="Keepsake - home">
+      <span class="logo-mark" aria-hidden="true">K</span>
+      <span class="logo-text" aria-hidden="true">eepsake</span>
+    </a>
+
+    <button type="button" class="burger-btn" popovertarget="main-nav" popovertargetaction="toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Menu">
+      <svg class="icon-burger" width="22" height="16" viewBox="0 0 22 16" fill="currentColor" aria-hidden="true">
+        <rect y="0" width="22" height="2"/>
+        <rect y="7" width="22" height="2"/>
+        <rect y="14" width="22" height="2"/>
+      </svg>
+      <svg class="icon-close" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M1 1l14 14M15 1L1 15"/>
+      </svg>
+    </button>
+
+    <nav class="nav" id="main-nav" popover aria-label="Main">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#top" class="nav-link active" aria-current="page">Home<svg class="nav-chevron" width="6" height="11" aria-hidden="true"><use href="#icon-chevron"></use></svg></a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About us<svg class="nav-chevron" width="6" height="11" aria-hidden="true"><use href="#icon-chevron"></use></svg></a></li>
+        <li class="nav-item"><a href="#works" class="nav-link">Our works<svg class="nav-chevron" width="6" height="11" aria-hidden="true"><use href="#icon-chevron"></use></svg></a></li>
+        <li class="nav-item"><a href="#journal" class="nav-link">Journal<svg class="nav-chevron" width="6" height="11" aria-hidden="true"><use href="#icon-chevron"></use></svg></a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact<svg class="nav-chevron" width="6" height="11" aria-hidden="true"><use href="#icon-chevron"></use></svg></a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary nav-mobile-btn">
+          <svg width="14" height="10" aria-hidden="true"><use href="#icon-mail"></use></svg>
+          Contact us
+        </a>
+        <button type="button" class="btn-favourites" aria-label="Favourites">
+          <svg width="16" height="14.4" aria-hidden="true"><use href="#icon-heart"></use></svg>
+          <span class="btn-fav-text">Favourites</span>
+        </button>
+      </div>
+
+      <div class="mobile-nav-info">
+        <p class="mobile-nav-info-label">Say hello</p>
+        <a href="mailto:hello@keepsake.studio" class="mobile-nav-info-text">hello@keepsake.studio</a>
+        <a href="tel:+442079460000" class="mobile-nav-info-text">+44 20 7946 0000</a>
+        <div class="socials nav-socials">
+          <a href="#" class="social-icon social-rss" aria-label="RSS">rss</a>
+          <a href="#" class="social-icon social-f" aria-label="Facebook">f</a>
+          <a href="#" class="social-icon social-tw" aria-label="Twitter">tw</a>
+          <a href="#" class="social-icon social-dr" aria-label="Dribbble">dr</a>
+          <a href="#" class="social-icon social-p" aria-label="Pinterest">p</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">We're Keepsake, a digital branding agency</h1>
+      <p class="hero-desc">Specializing in web design, poster, motion video, based in London. We love to turn ideas into beautiful things.</p>
+      <div class="hero-actions">
+        <a href="#works" class="btn btn-primary">See our works</a>
+        <a href="#contact" class="btn btn-secondary">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="works section" id="works">
+    <div class="container">
+      <input type="radio" name="portfolio-filter" id="filter-all" class="filter-radio" checked>
+      <input type="radio" name="portfolio-filter" id="filter-branding" class="filter-radio">
+      <input type="radio" name="portfolio-filter" id="filter-identity" class="filter-radio">
+      <input type="radio" name="portfolio-filter" id="filter-print" class="filter-radio">
+      <input type="radio" name="portfolio-filter" id="filter-web" class="filter-radio">
+      <input type="radio" name="portfolio-filter" id="filter-motion" class="filter-radio">
+
+      <div class="works-head">
+        <h2 class="section-title">Our awesome works</h2>
+        <div class="filter-chips">
+          <label for="filter-all" class="chip">All</label>
+          <label for="filter-branding" class="chip">Branding</label>
+          <label for="filter-identity" class="chip">Identity</label>
+          <label for="filter-print" class="chip">Print</label>
+          <label for="filter-web" class="chip">Web</label>
+          <label for="filter-motion" class="chip">Motion</label>
+        </div>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card" data-category="branding" tabindex="0">
+          <img src="img/img1.png" alt="Clothes tag mockup" class="card-img" width="358" height="282">
+          <div class="hover-overlay">
+            <span class="plus-icon" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"></use></svg></span>
+            <h3 class="card-title">Clothes Tag</h3>
+            <div class="card-divider"></div>
+            <span class="card-cat">Branding</span>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="print" tabindex="0">
+          <img src="img/img2.png" alt="Piecepaper print project" class="card-img" width="358" height="282" loading="lazy">
+          <div class="hover-overlay">
+            <span class="plus-icon" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"></use></svg></span>
+            <h3 class="card-title">Piecepaper</h3>
+            <div class="card-divider"></div>
+            <span class="card-cat">Print</span>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="identity" tabindex="0">
+          <img src="img/img3.png" alt="Vinyl record cover" class="card-img" width="358" height="282" loading="lazy">
+          <div class="hover-overlay">
+            <span class="plus-icon" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"></use></svg></span>
+            <h3 class="card-title">Vinyl Cover</h3>
+            <div class="card-divider"></div>
+            <span class="card-cat">Identity</span>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="print" tabindex="0">
+          <img src="img/img4.png" alt="Vol. 16 magazine cover" class="card-img" width="358" height="282" loading="lazy">
+          <div class="hover-overlay">
+            <span class="plus-icon" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"></use></svg></span>
+            <h3 class="card-title">Vol. 16</h3>
+            <div class="card-divider"></div>
+            <span class="card-cat">Print</span>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="web" tabindex="0">
+          <img src="img/img5.png" alt="Profile UI design" class="card-img" width="358" height="282" loading="lazy">
+          <div class="hover-overlay">
+            <span class="plus-icon" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"></use></svg></span>
+            <h3 class="card-title">Profile UI</h3>
+            <div class="card-divider"></div>
+            <span class="card-cat">Web</span>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="motion" tabindex="0">
+          <img src="img/img6.png" alt="App panels motion project" class="card-img" width="358" height="282" loading="lazy">
+          <div class="hover-overlay">
+            <span class="plus-icon" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"></use></svg></span>
+            <h3 class="card-title">App Panels</h3>
+            <div class="card-divider"></div>
+            <span class="card-cat">Motion</span>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="identity" tabindex="0">
+          <img src="img/img7.png" alt="WallSt. identity" class="card-img" width="358" height="282" loading="lazy">
+          <div class="hover-overlay">
+            <span class="plus-icon" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"></use></svg></span>
+            <h3 class="card-title">WallSt.</h3>
+            <div class="card-divider"></div>
+            <span class="card-cat">Identity</span>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="print" tabindex="0">
+          <img src="img/img8.png" alt="John Doe design studio business card" class="card-img" width="358" height="282" loading="lazy">
+          <div class="hover-overlay">
+            <span class="plus-icon" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"></use></svg></span>
+            <h3 class="card-title">John Doe Studio</h3>
+            <div class="card-divider"></div>
+            <span class="card-cat">Print</span>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="branding" tabindex="0">
+          <img src="img/img9.png" alt="Seal fabric branding" class="card-img" width="358" height="282" loading="lazy">
+          <div class="hover-overlay">
+            <span class="plus-icon" aria-hidden="true"><svg width="16" height="16"><use href="#icon-plus"></use></svg></span>
+            <h3 class="card-title">Seal Fabric</h3>
+            <div class="card-divider"></div>
+            <span class="card-cat">Branding</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="load-more">
+        <button type="button" class="btn btn-secondary btn-load-more">Load more works</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta section">
+    <div class="container cta-container">
+      <h2 class="cta-title">Would you love to work with us?</h2>
+      <a href="#contact" class="btn btn-primary">
+        <svg width="14" height="10" aria-hidden="true"><use href="#icon-mail"></use></svg>
+        Contact us
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="about">
+    <div class="container">
+      <h2 class="section-title">What do we do</h2>
+      <p class="section-desc">We are a small team of designers and makers who help brands look their best online and offline.</p>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon-bg">
+            <svg width="42" height="30" viewBox="0 0 42 30" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="1" y="1" width="40" height="22"/>
+              <path d="M21 23v5M13 29h16"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Web design</h3>
+          <p class="service-text">Responsive sites and product interfaces that look sharp on every screen.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon-bg">
+            <svg width="40" height="32" viewBox="0 0 40 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="1" y="7" width="38" height="24"/>
+              <path d="M12 1l8 6 8-6"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Motion video</h3>
+          <p class="service-text">Explainers, logo animations and social clips that bring brands to life.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon-bg">
+            <svg width="42" height="34" viewBox="0 0 42 34" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M11 17V1h20v16"/>
+              <rect x="1" y="17" width="40" height="16"/>
+              <path d="M11 25h20"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Print design</h3>
+          <p class="service-text">Posters, packaging and stationery prepared to be printed right.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon-bg">
+            <svg width="34" height="30.6" aria-hidden="true"><use href="#icon-heart"></use></svg>
+          </div>
+          <h3 class="service-title">Illustration</h3>
+          <p class="service-text">Custom illustrations and icon sets in a style that is yours alone.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <p class="stat-number">120+</p>
+          <p class="stat-label">Projects done</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-number">8</p>
+          <p class="stat-label">Years in craft</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-number">64</p>
+          <p class="stat-label">Happy clients</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-number">15</p>
+          <p class="stat-label">Design awards</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients & testimonial -->
+  <section class="clients section">
+    <div class="container">
+      <h2 class="section-title">Clients kind words</h2>
+      <p class="section-desc">Some of the teams that trusted us with their brands.</p>
+
+      <ul class="client-logos">
+        <li class="client-logo logo-nordly">NORDLY</li>
+        <li class="client-logo logo-halcyon">Halcyon</li>
+        <li class="client-logo logo-arco">ARCO</li>
+        <li class="client-logo logo-pinewood">pinewood</li>
+        <li class="client-logo logo-vela">VELA</li>
+        <li class="client-logo logo-ostra">ostra</li>
+      </ul>
+
+      <blockquote class="testimonial">
+        <span class="quote-mark" aria-hidden="true"></span>
+        <p class="testimonial-text">Keepsake turned a vague brief into a brand we are proud of. The team was fast, honest about trade-offs and obsessed with the details.</p>
+        <footer class="testimonial-author">
+          <div class="author-info">
+            <div class="author-avatar" aria-hidden="true">OM</div>
+            <div class="author-details">
+              <p class="author-name">Olena Marchenko</p>
+              <p class="author-role">Marketing Lead, Nordly</p>
+            </div>
+          </div>
+          <div class="slider-dots" aria-hidden="true">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+  <!-- Journal -->
+  <section class="journal section" id="journal">
+    <div class="container">
+      <h2 class="section-title">From the journal</h2>
+      <p class="section-desc">Notes on process, case studies and things that inspire us.</p>
+
+      <div class="journal-grid">
+        <article class="journal-card">
+          <div class="journal-thumb">
+            <img src="img/brown.png" alt="" width="150" height="150" loading="lazy">
+          </div>
+          <div class="journal-content">
+            <p class="journal-meta">Oct 13, 2026 Identity</p>
+            <h3 class="journal-title">Sollicitudin tortor inceptos</h3>
+            <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            <a href="#" class="read-more">Read more <svg width="5" height="9" aria-hidden="true"><use href="#icon-chevron"></use></svg></a>
+          </div>
+        </article>
+
+        <article class="journal-card">
+          <div class="journal-thumb">
+            <img src="img/blue.png" alt="" width="150" height="150" loading="lazy">
+          </div>
+          <div class="journal-content">
+            <p class="journal-meta">Oct 23, 2026 Branding</p>
+            <h3 class="journal-title">Amet inceptos fringilla fusce</h3>
+            <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            <a href="#" class="read-more">Read more <svg width="5" height="9" aria-hidden="true"><use href="#icon-chevron"></use></svg></a>
+          </div>
+        </article>
+
+        <article class="journal-card">
+          <div class="journal-thumb">
+            <img src="img/gray.png" alt="" width="150" height="150" loading="lazy">
+          </div>
+          <div class="journal-content">
+            <p class="journal-meta">Sep 19, 2026 Identity</p>
+            <h3 class="journal-title">Cursus malesuada justo</h3>
+            <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            <a href="#" class="read-more">Read more <svg width="5" height="9" aria-hidden="true"><use href="#icon-chevron"></use></svg></a>
+          </div>
+        </article>
+
+        <article class="journal-card">
+          <div class="journal-thumb">
+            <img src="img/black.png" alt="" width="150" height="150" loading="lazy">
+          </div>
+          <div class="journal-content">
+            <p class="journal-meta">Sep 27, 2026 Branding</p>
+            <h3 class="journal-title">Ornare cursus bibendum purus</h3>
+            <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            <a href="#" class="read-more">Read more <svg width="5" height="9" aria-hidden="true"><use href="#icon-chevron"></use></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="newsletter-block">
+        <h2 class="footer-heading">Newsletter</h2>
+        <p class="newsletter-desc">Fresh case studies and design notes, once a month.</p>
+
+        <form class="newsletter-form" action="#newsletter-success" method="get">
+          <div class="field-row">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletter-email" name="email" class="input-field" placeholder="Your email address" required aria-describedby="email-error">
+            <button type="submit" class="btn btn-primary btn-subscribe">Subscribe</button>
+          </div>
+          <p class="field-error" id="email-error">Please enter a valid email address.</p>
+          <div class="consent-row">
+            <input type="checkbox" id="consent-check" name="consent" class="consent-checkbox" required>
+            <label for="consent-check" class="consent-text">I agree to the privacy policy</label>
+          </div>
+        </form>
+
+        <div class="newsletter-success" id="newsletter-success" role="status">
+          <span class="success-check" aria-hidden="true"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 3.5l2.8 2.5L9 1"/></svg></span>
+          <p>You're in! Check your inbox to confirm.</p>
+        </div>
+        <p class="newsletter-note">One email a month. No spam, unsubscribe anytime.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h2 class="footer-heading">Studio</h2>
+          <ul class="footer-list">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#works">Our works</a></li>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#top">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-list">
+            <li><a href="#about">Web design</a></li>
+            <li><a href="#about">Motion video</a></li>
+            <li><a href="#about">Print design</a></li>
+            <li><a href="#about">Illustration</a></li>
+            <li><a href="#about">Brand strategy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <p class="copyright">&copy; 2026 Keepsake. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" class="social-icon social-rss" aria-label="RSS">rss</a>
+        <a href="#" class="social-icon social-f" aria-label="Facebook">f</a>
+        <a href="#" class="social-icon social-tw" aria-label="Twitter">tw</a>
+        <a href="#" class="social-icon social-dr" aria-label="Dribbble">dr</a>
+        <a href="#" class="social-icon social-p" aria-label="Pinterest">p</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="to-top-btn" aria-label="Back to top">
+  <svg width="12" height="14" viewBox="0 0 12 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M6 14V2M1 7l5-5 5 5"/>
+  </svg>
+</a>
+
+</body>
+</html>
